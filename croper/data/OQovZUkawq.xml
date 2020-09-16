@@ -1,0 +1,159 @@
+<annotation>
+<filename>OQovZUkawq.jpg</filename>
+<folder>users/sontung2310//passport_2</folder>
+<source>
+<submittedBy>B&#249;i S&#417;n T&#249;ng</submittedBy>
+</source>
+<imagesize>
+<nrows>1000</nrows>
+<ncols>1000</ncols>
+</imagesize>
+<object>
+<name>top_left</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes>p</attributes>
+<parts>
+<hasparts />
+<ispartof />
+</parts>
+<date>23-07-20 20:52:53:273</date>
+<id>0</id>
+<type>bounding_box</type>
+<polygon>
+<username>sontung2310</username>
+<pt>
+<x>401</x>
+<y>303</y>
+<time>23-07-20 20:52:37:031</time>
+</pt>
+<pt>
+<x>497</x>
+<y>369</y>
+<time>23-07-20 20:52:42:567</time>
+</pt>
+<pt>
+<x>401</x>
+<y>303</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>497</x>
+<y>369</y>
+<time>undefined</time>
+</pt>
+<closed_date>23-07-20 20:52:42:569</closed_date>
+</polygon>
+</object><object>
+<name>top_right</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes>p</attributes>
+<parts>
+<hasparts />
+<ispartof />
+</parts>
+<date>23-07-20 20:52:53:273</date>
+<id>0</id>
+<type>bounding_box</type>
+<polygon>
+<username>sontung2310</username>
+<pt>
+<x>435</x>
+<y>786</y>
+<time>23-07-20 20:52:37:031</time>
+</pt>
+<pt>
+<x>531</x>
+<y>852</y>
+<time>23-07-20 20:52:42:567</time>
+</pt>
+<pt>
+<x>435</x>
+<y>786</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>531</x>
+<y>852</y>
+<time>undefined</time>
+</pt>
+<closed_date>23-07-20 20:52:42:569</closed_date>
+</polygon>
+</object><object>
+<name>bot_right</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes>p</attributes>
+<parts>
+<hasparts />
+<ispartof />
+</parts>
+<date>23-07-20 20:52:53:273</date>
+<id>0</id>
+<type>bounding_box</type>
+<polygon>
+<username>sontung2310</username>
+<pt>
+<x>104</x>
+<y>809</y>
+<time>23-07-20 20:52:37:031</time>
+</pt>
+<pt>
+<x>200</x>
+<y>875</y>
+<time>23-07-20 20:52:42:567</time>
+</pt>
+<pt>
+<x>104</x>
+<y>809</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>200</x>
+<y>875</y>
+<time>undefined</time>
+</pt>
+<closed_date>23-07-20 20:52:42:569</closed_date>
+</polygon>
+</object><object>
+<name>bot_left</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes>p</attributes>
+<parts>
+<hasparts />
+<ispartof />
+</parts>
+<date>23-07-20 20:52:53:273</date>
+<id>0</id>
+<type>bounding_box</type>
+<polygon>
+<username>sontung2310</username>
+<pt>
+<x>70</x>
+<y>326</y>
+<time>23-07-20 20:52:37:031</time>
+</pt>
+<pt>
+<x>166</x>
+<y>392</y>
+<time>23-07-20 20:52:42:567</time>
+</pt>
+<pt>
+<x>70</x>
+<y>326</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>166</x>
+<y>392</y>
+<time>undefined</time>
+</pt>
+<closed_date>23-07-20 20:52:42:569</closed_date>
+</polygon>
+</object></annotation>

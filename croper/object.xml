@@ -1,0 +1,38 @@
+<object>
+<name>type</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes>p</attributes>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>23-07-20 20:52:53:273</date>
+<id>0</id>
+<type>bounding_box</type>
+<polygon>
+<username>sontung2310</username>
+<pt>
+<x>255</x>
+<y>75</y>
+<time>23-07-20 20:52:37:031</time>
+</pt>
+<pt>
+<x>269</x>
+<y>75</y>
+<time>23-07-20 20:52:42:567</time>
+</pt>
+<pt>
+<x>269</x>
+<y>92</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>255</x>
+<y>92</y>
+<time>undefined</time>
+</pt>
+<closed_date>23-07-20 20:52:42:569</closed_date>
+</polygon>
+</object>
