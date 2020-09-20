@@ -64,14 +64,26 @@ def getRotatedImage(image,realpassport):
     gray=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
     _,thresh=cv2.threshold(gray,0,255,cv2.THRESH_BINARY)
     contours,_=cv2.findContours(thresh,cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+
+    # rect=cv2.minAreaRect(contours[0])
+    # box=cv2.boxPoints(rect)
+    # box=np.int0(box)# x trước y sau
+    # box=np.concatenate([box,box],axis=0)
+    cnt=contours[0]
+    approx = cv2.approxPolyDP(cnt, 0.009 * cv2.arcLength(cnt, True), True)
+    box=approx.ravel()
+    # print(box)
     # img_copy=image.copy()
-    # cv2.drawContours(image, contours, -1, (0, 255, 0), 3)
-    # cv2.imshow("img",img_copy)
+    # cv2.drawContours(img_copy, [approx], -1, (0, 255, 0), 3)
+    # cv2.imshow("img",cv2.resize(img_copy,(500,500)))
     # cv2.waitKey()
-    rect=cv2.minAreaRect(contours[0])
-    box=cv2.boxPoints(rect)
-    box=np.int0(box)# x trước y sau
+    box=np.reshape(box,newshape=(4,2))
+    box = np.int0(box)  # x trước y sau
+
     box=np.concatenate([box,box],axis=0)
+    box=box[2:6]
+    box=[box[0],box[3],box[2],box[1]]
+    box = np.concatenate([box, box], axis=0)
 
     if angle<90:
         startPoint=1
@@ -90,11 +102,11 @@ def getRotatedImage(image,realpassport):
         points = box[startPoint:4+startPoint]
 
     # img_copy = image.copy()
-    # for point in points:
-    #     cv2.circle(img_copy, (point[0], point[1]), 3, (255,0 , 0), 3)
-    # cv2.imshow("img", cv2.resize(img_copy, (500, 500)))
+    # for i,point in enumerate(points):
+    #     cv2.circle(img_copy, (point[0], point[1]), 5, (0,255 , 0), 5)
+    #     cv2.putText(img_copy,str(i+1),(point[0], point[1]),cv2.FONT_HERSHEY_COMPLEX,10,(255,0,0),5)
+    # cv2.imshow("img", cv2.resize(img_copy, (int(img_copy.shape[1]/4),int(img_copy.shape[0]/4))))
     # cv2.waitKey()
-
     return imageWithRealGround(image,realpassport),points  #passport with black background and 4 points
 
 def createBBox(x,y,h,w):# tọa độ góc và size của passport
@@ -110,7 +122,7 @@ def createData():
     if not os.path.exists(folder_name):
         os.mkdir(folder_name)
 
-    num_data = 20
+    num_data = 1000
     while len(os.listdir(folder_name)) < num_data*2:
         image_names = os.listdir('passport')
         image_name = image_names[np.random.randint(0, len(image_names), size=1, dtype=np.int64)[0]]
